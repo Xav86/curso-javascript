@@ -8,8 +8,8 @@ form.addEventListener('input', (event) => {
     const name = form.name.value;
     
     const newDivElement = document.createElement('div');
-    newDivElement.textContent = name;
+    newDivElement.textContent = name.toUpperCase();
 
-    // form.nextElementSibling.remove();
+    form.nextElementSibling.remove();
     form.after(newDivElement);
 });
